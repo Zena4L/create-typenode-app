@@ -8,7 +8,7 @@ const server = http.createServer(app);
 dotenv.config({ path:'config.env'});
 
 
-const port = process.env.PORT;
+const port = process.env.PORT || 8080;
 server.listen(port,()=>{
     console.log(`server is live on ${port} .... `)
 })
